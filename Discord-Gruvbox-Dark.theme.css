@@ -1,0 +1,175 @@
+//META{"name":"Discord Gruvbox Dark","description":"Gruvbox dark theme for discord based on https://github.com/morhetz/gruvbox and https://github.com/Moskas/discord-gruvbox","author":"David Behrle","version":"0.1"}*//
+
+:root{
+    --gruvbox-bg0: #282828;
+    --gruvbox-bg-alt1: #2b2b2b;
+    --gruvbox-bg-alt2: #212121;
+    --gruvbox-bg0_h: #1d2021;
+    --gruvbox-bg0_s: #32302f;
+    --gruvbox-bg1: #3c3836;
+    --gruvbox-bg2: #504945;
+    --gruvbox-bg3: #665c54;
+    --gruvbox-bg4: #7c6f64;
+    --gruvbox-fg0: #fbf1c7;
+    --gruvbox-fg1: #ebdbb2;
+    --gruvbox-fg2: #d5c4a1;
+    --gruvbox-fg3: #bdae93;
+    --gruvbox-fg4: #a89984;
+    --gruvbox-gray: #928374;
+
+    --gruvbox-red1: #fb4934;
+    --gruvbox-red2: #cc241d;
+    --gruvbox-red3: #9d0006;
+    --gruvbox-green1: #b8bb26;
+    --gruvbox-green2: #98971a;
+    --gruvbox-green3: #79740e;
+    --gruvbox-yellow1: #fabd2f;
+    --gruvbox-yellow2: #d79921;
+    --gruvbox-yellow3: #b57614;
+    --gruvbox-blue1: #83a598;
+    --gruvbox-blue2: #458588;
+    --gruvbox-blue3: #076678;
+    --gruvbox-purple1: #d3869b;
+    --gruvbox-purple2: #b16286;
+    --gruvbox-purple3: #8f3f71;
+    --gruvbox-aqua1: #8ec07c;
+    --gruvbox-aqua2: #689d6a;
+    --gruvbox-aqua3: #427b58;
+    --gruvbox-orange1: #fe8019;
+    --gruvbox-orange2: #d65d0e;
+    --gruvbox-orange3: #af3a03;
+
+    --green-230: var(--gruvbox-green2);
+    --green-360: var(--gruvbox-aqua2);
+    --white-500: var(--gruvbox-fg0);
+    --brand-500: var(--gruvbox-aqua2);
+    --brand-560: var(--gruvbox-aqua3);
+    --brand-600: var(--gruvbox-aqua3);
+
+    --primary-400: var(--gruvbox-bg1);
+}
+
+.theme-dark{
+    --header-primary: var(--gruvbox-fg1);
+    --header-secondary: var(--gruvbox-fg1);
+    --header-muted: var(--gruvbox-bg4);
+    --text-normal: var(--gruvbox-fg1);
+    --text-muted: var(--gruvbox-bg4);
+    --text-primary: var(--gruvbox-aqua2);
+    --text-link: var(--gruvbox-blue2);
+    --text-brand: var(--gruvbox-green1);
+
+    --control-brand-foreground-new: var(--gruvbox-aqua2);
+
+    --interactive-normal: var(--gruvbox-fg1); 
+    --interactive-hover: var(--gruvbox-fg3);
+    --interactive-active: var(--gruvbox-fg3);
+    --interactive-muted: var(--gruvbox-bg4);
+
+    --background-primary: var(--gruvbox-bg-alt1);
+    --background-secondary: var(--gruvbox-bg0);
+    --background-secondary-alt: var(--gruvbox-bg0);
+    --background-tertiary: var(--gruvbox-bg0_h);
+    --background-accent: var(--gruvbox-bg-alt1);
+
+    --background-floating: var(--gruvbox-bg0);
+    --background-nested-floating: var(--gruvbox-bg0);
+
+    --activity-card-background: var(--gruxbox-bg0);
+    --bg-surface-overlay: var(--gruvbox-bg-alt2);
+
+    /*add floating, mobile, nested...*/
+    --background-modifier-hover: var(--gruvbox-bg1);
+    --background-modifier-active: var(--gruvbox-bg2);
+    --background-modifier-selected: var(--gruvbox-bg2);
+    --background-modifier-accent: var(--gruvbox-bg2);
+
+    --channel-icon: var(--gruvbox-fg4);
+    --channels-default: var(--gruvbox-fg4);
+    
+    --default-channel-text: var(--gruvbox-fg2);
+
+    --logo-primary: var(--gruvbox-fg1);
+
+    --profile-body-background-color: var(--gruvbox-aqua2);
+
+    --bg-overlay: var(--gruvbox-aqua2);
+
+    --background-mentioned: rgba(142, 192 ,124 , 0.3); /* #8ec07c */
+    --background-mentioned-hover: rgba(142, 192 ,124 , 0.4);
+    --info-warning-foreground: var(--gruvbox-aqua3);
+
+    --interactive-hover: var(--gruvbox-aqua1);
+    --interactive-active: var(--gruvbox-aqua2);
+    --button-positive-background-hover: var(--gruvbox-aqua1);
+    --button-secondary-background-hover: var(--gruvbox-aqua1);
+
+    --text-positive: var(--gruvbox-green1);
+    --text-warning: var(--gruvbox-orange1);
+    --text-primary-background: var(--gruvbox-fg3);
+
+    --channeltextarea-background: var(--gruvbox-bg1);
+    --channel-text-area-placeholder:var(--gruvbox-fg4);
+
+    --scrollbar-auto-thumb: var(--gruvbox-bg0_h);
+    --scrollbar-auto-track: var(--gruvbox-bg0);
+    --scrollbar-auto-scrollbar-color-thumb: var(--gruvbox-fg0);
+    --scrollbar-auto-scrollbar-color-track: var(--gruvbox-fg0);
+    --scrollbar-thin-thumb: var(--gruvbox-bg0_h);
+    --scrollbar-thin-track: transparent;
+
+    --activity-card-background: var(--gruvbox-bg0);
+
+    --button-white: var(--gruvbox-light3);
+    --button-white-text: var(--gruvbox-bg0);
+    --button-white-hover: var(--gruvbox-fg1);
+    --button-white-active: var(--gruvbox-fg0);
+    --button-white-outlined: rgba(235, 219, 178, 0.1);
+
+    --status-positive-background: rgb(104, 157 ,106);
+    --status-positive-text: var(--gruvbox-fg1);
+    --status-positive: rgb(104, 157, 106);
+
+    --status-danger-background: rgb(251, 73, 52);
+    --status-danger-text: var(--gruvbox-fg1);
+    --status-danger: rgb(204, 36, 29);
+
+    --control-brand-foreground: var(--gruvbox-aqua1);
+    --control-brand-foreground-new: var(--gruvbox-aqua2);
+    --bg-brand: var(--gruvbox-yellow2);
+
+    --info-positive-foreground: var(--gruvbox-red1);
+
+    --embed-title: var(--gruvbox-fg0);
+    --button-outline-positive-border: var(--gruvbox-red2);
+
+    --button-outline-danger-background: transparent;
+    --button-outline-danger-background-active: var(--gruvbox-red2);
+    --button-outline-danger-background-hover: var(--gruvbox-red1);
+    --button-outline-danger-border: var(--gruvbox-red2);
+    --button-outline-danger-border-active: var(--gruvbox-red3);
+    --button-outline-danger-border-hover: var(--gruvbox-red2);
+    --button-outline-danger-text: var(--gruvbox-fg1);
+    --button-outline-danger-text-active: var(--grubox-fg1);
+    --button-outline-danger-text-hover: var(--gruvbox-fg1);
+
+    --button-danger-background: var(--gruvbox-red2);
+    --button-danger-background-active: var(--gruvbox-red1);
+    --button-danger-background-disabled: var(--gruvbox-red1);
+    --button-danger-background-hover: var(--gruvbox-red1);
+
+    --button-secondary-background: var(--gruvbox-bg1);
+    --button-secondary-background-active: var(--gruvbox-bg3);
+    --button-secondary-background-disabled: var(--gruvbox-bg0_s);
+    --button-secondary-background-hover: var(--gruvbox-bg2);
+
+    .bd-button-filled.bd-button-color-brand {
+        color: var(--gruvbox-fg1);
+        background-color: var(--gruvbox-blue2);
+    }
+    .bd-sidebar-header h2 {
+        color: var(--gruvbox-fg4);
+    }
+    
+}
+
