@@ -46,6 +46,7 @@
     --brand-560: var(--gruvbox-aqua3);
     --brand-600: var(--gruvbox-aqua3);
     --brand-10a: rgba(33, 33, 33, 0.4);
+    --brand-experiment-600: var(--gruvbox-blue3);
 
     --primary-400: var(--gruvbox-bg1);
 }
@@ -75,6 +76,8 @@
 
     --background-floating: var(--gruvbox-bg0);
     --background-nested-floating: var(--gruvbox-bg0);
+    --modal-background: var(--gruvbox-bg0);
+    --modal-footer-background: var(--modal-background);
 
     --activity-card-background: var(--gruxbox-bg0);
     --bg-surface-overlay: var(--gruvbox-bg-alt2);
@@ -173,6 +176,15 @@
     .bd-sidebar-header h2 {
         color: var(--gruvbox-fg4);
     }
-    
+    .bd-notice {
+        color: var(--gruvbox-fg0);
+    }
+    .bd-notice-button {
+        color: var(--gruvbox-fg0);
+        border-color: var(--gruvbox-fg0);
+        hover-color: var(--gruvbox-red2);
+    }
+    #outdated-plugins > span {
+        color: var(--gruvbox-fg0);
+    }
 }
-
